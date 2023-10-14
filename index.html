@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="header">
+    <div class="container">
+      <h1 id="title" class="text-center"> First Ever Survey Form</h1>
+      <p id="description" class="description text-center">Thank you for taking the time to review this survey form! </p>
+      </div>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+        <label 
+        id="name-label" 
+        for="name"> 
+        Name:</label>
+       <input id="name" 
+       type="text" 
+       class="form-control"
+       placeholder="John Doe" 
+       required>
+        </div>
+
+        <div class="form-group">
+        <label 
+        id="email-label" 
+        for="email">
+        Email:</label> 
+        <input id="email" 
+        type="email" 
+        class="form-control"
+        placeholder="example@gmail.com"
+        required> 
+        </div>
+
+        <div class="form-group">
+        <label 
+        id="number-label" 
+        for="number"> 
+        Age:</label> 
+        <input 
+        id="number" 
+        type="number" 
+        class="form-control" 
+        min="10" 
+        max="99" 
+        placeholder="Age">
+        </div>
+
+        <div class="form-group">
+          <p>Sex:</p>
+        <select 
+        id="dropdown" 
+        name="selectSex" 
+        class="form-control">
+          <option 
+            disabled 
+            selected 
+            value>
+            Select
+          </option>
+          <option 
+            value="male">
+            Male
+          </option>
+          <option 
+            value="female">
+            Female
+          </option>
+        </select>
+          </div>
+
+        <div class="form-group">
+          <p>Would you give this a passing grade?</p>
+            <label>
+              <input 
+              type="radio" 
+              name="radioOption" 
+              value="definitely" 
+              class="input-radio">
+              Definitely
+              </label>
+            <label>
+              <input 
+              type="radio" 
+              name="radioOption" 
+              value="probably" 
+              class="input-radio">
+              Probably
+              </input>
+              </label>
+            <label>
+              <input 
+              type="radio" 
+              name="radioOption" 
+              value="notAChance" 
+              class="input-radio"> 
+              Not a chance
+              </input>
+              </label>
+            </div>
+
+            <div class="form-group">
+              <p>Which area should I improve in?<span class="clue">(Check all that apply)<span></p>
+            <label>
+              <input 
+              type="checkbox"
+              name="checkboxOption"
+              value="html"
+              class="input-checkbox">
+              </input>
+              HTML
+              </label>
+            <label>
+              <input 
+              type="checkbox"
+              name="checkboxOption"
+              value="css"
+              class="input-checkbox">
+              </input>
+              CSS
+              </label>
+            <label>
+              <input 
+              type="checkbox"
+              name="checkboxOption"
+              value="other"
+              class="input-checkbox">
+              </input>
+              Other
+              </label>
+              </div>
+
+              <div class="form-group">
+                <p>Comments or suggestions?</p>
+                <textarea 
+                id="comments" 
+                class="input-textarea" 
+                name="comment"
+                placeholder="Enter your comment..."></textarea>
+                </div>
+
+              <div class="form-group">
+              <button 
+              type="submit" 
+              id="submit"
+              class="submit-button">
+              Submit
+              </button>
+              </div>
+          </div>
+        </form>
+      </div>
+  </body>
+</html>
